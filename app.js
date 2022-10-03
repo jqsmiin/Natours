@@ -101,7 +101,7 @@ const limiter = rateLimit({
     windowMs: 60 * 60 * 1000,
     message: 'To many request from this IP, please try again in an hour'
 })
-
+// Limiter
 app.use('/api', limiter)
 
 // Body parser, reading data from body into req.body
